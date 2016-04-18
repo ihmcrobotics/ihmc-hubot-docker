@@ -1,4 +1,4 @@
-#IHMC Hubot Docker
+# IHMC Hubot Docker
 
 A Docker container for the IHMC Hubot.
 
