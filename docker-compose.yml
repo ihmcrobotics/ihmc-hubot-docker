@@ -11,5 +11,6 @@ services:
       - brain
   brain:
     image: redis:3.0
+    command: redis-server --appendonly yes
     volumes:
       - ./../brain-data:/data
