@@ -1,0 +1,15 @@
+version: '2'
+services:
+  rosie:
+    build:
+      context: .
+    volumes:
+      - /etc/timezone:/etc/timezone
+    env_file:
+      - ./env_config
+    depends_on:
+      - brain
+  brain:
+    image: redis:3.0
+    volumes:
+      - ./../brain-data:/data
