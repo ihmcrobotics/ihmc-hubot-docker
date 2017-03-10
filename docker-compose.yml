@@ -5,6 +5,7 @@ services:
       context: .
     volumes:
       - /etc/timezone:/etc/timezone
+      - /etc/localtime:/etc/localtime
     env_file:
       - ./env_config
     depends_on:
@@ -14,3 +15,5 @@ services:
     command: redis-server --appendonly yes
     volumes:
       - ./../brain-data:/data
+      - /etc/timezone:/etc/timezone
+      - /etc/localtime:/etc/localtime
