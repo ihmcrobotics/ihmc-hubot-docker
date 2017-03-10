@@ -29,7 +29,7 @@ ENV PORT ${HUBOT_PORT}
 
 EXPOSE ${HUBOT_PORT}
 
-RUN git clone --depth=1 ***REMOVED*** ${HUBOT_DIR}
+RUN git clone --depth=1 https://github.com/ihmcrobotics/ihmc-hubot.git ${HUBOT_DIR}
 
 WORKDIR ${HUBOT_DIR}
 
